@@ -1,0 +1,42 @@
+
+.finished{
+  text-decoration: line-through;
+}
+#task{
+  margin: auto;
+  margin: 5px 0;
+  font-size: 20px;
+  color: #444;
+  text-transform: capitalize;
+  width: 100%;
+}
+.row{
+  width: 80%
+}
+.checkbox{
+  height: 20px;
+  width: 20px;
+  margin-right: 30px;
+}
+
+.no-items{
+  color: #555;
+  padding: 5px 30px;
+  font-size: 25px;
+  text-transform: capitalize;
+  background-color: beige;
+  border-radius: 10px;
+}
+.button{
+  float: right;
+}
+.form{
+  display: flex;
+}
+.form input{
+  padding: 0 20px;
+  outline: none;
+}
+.icon{
+  font-size: 30px;
+}

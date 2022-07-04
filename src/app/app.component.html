@@ -1,0 +1,27 @@
+<router-outlet></router-outlet>
+
+<div class="container">
+  <div class="app">
+    <div *ngIf="tasks.length > 0" class="row">
+      <div *ngFor="let task of tasks" [ngClass]="{'finished':task.completed}" id="task">
+        <input class="checkbox" (change)="changeStatus(task)" type="checkbox" [checked]="task.completed"/>
+        {{task.title}}
+        <button class="btn btn-danger button" (click)="deleteItem(task.id)">Delete</button>
+        <hr>
+      </div>
+    </div>
+    <div *ngIf="tasks.length == 0" class="alert alert-info">
+      No Tasks To Show
+    </div>
+
+    <br><br>
+
+    <div class="form">
+      <input type="text" placeholder="type a task" #Task />
+      <button class="btn btn-primary" (click)="addItem(Task.value)">Add</button>
+    </div>
+  </div>
+</div>
+
+
+
